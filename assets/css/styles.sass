@@ -1,4 +1,4 @@
-$phoneQuery: 'screen and (max-width: 850px)'
+$phoneQuery: 'screen and (max-width: 750px)'
 
 $stdMargin: 8.5em
 $phoneMargin: 0.5em
@@ -67,7 +67,9 @@ body
       display: table
     .search-box
       display: table-cell
-      width: 35em
+      width: 30em
+      @media #{$phoneQuery}
+        width: 100%
     input[type="submit"]
       margin: 0 0 0 .5em
       @media #{$phoneQuery}
