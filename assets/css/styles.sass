@@ -1,5 +1,4 @@
-$tabletQuery: 'screen and (max-width: 800px)'
-$phoneQuery: 'screen and (max-width: 500px)'
+$phoneQuery: 'screen and (max-width: 850px)'
 
 $stdMargin: 10em
 $phoneMargin: 0.5em
@@ -25,8 +24,6 @@ body
 
   .main
     margin: 0 $stdMargin
-    @media #{$tabletQuery}
-      margin: 0 7em
     @media #{$phoneQuery}
       margin: 0 $phoneMargin
 
@@ -73,8 +70,6 @@ body
       width: 35em
     input[type="submit"]
       margin: 0 0 0 .5em
-      @media #{$tabletQuery}
-        margin-right: $tabletMargin
       @media #{$phoneQuery}
         margin-right: $phoneMargin
     .small-logo
@@ -82,8 +77,6 @@ body
       font-size: 2em
       text-align: right
       padding-right: 1em
-      @media #{$tabletQuery}
-        width: $tabletMargin
       @media #{$phoneQuery}
         display: none
 
