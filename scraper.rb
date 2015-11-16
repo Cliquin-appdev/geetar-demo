@@ -1,27 +1,12 @@
 require 'nokogiri'
 require 'open-uri'
 require 'cgi'
-require 'watir-webdriver'
 
 module Scraper
   BASE_URL = 'https://www.ultimate-guitar.com/search.php'
 
   def get_page(page_url)
-    if rand(50) == 29
-      html = click_ad_and_return_html(page_url)
-    else
-      html = Nokogiri::HTML( open(page_url, 'User-Agent' => 'firefox') )
-    end
-    html
-  end
-
-  def click_ad_and_return_html(page_url)
-    browser = Watir::Browser.new :phantomjs
-    browser.goto(page_url)
-    html = browser.html
-    browser.span(class: "head_ad_UG").click
-    browser.close
-    Nokogiri::HTML(html)
+    Nokogiri::HTML( open(page_url, 'User-Agent' => 'firefox') )
   end
 end
 
