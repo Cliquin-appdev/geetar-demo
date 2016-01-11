@@ -86,6 +86,6 @@ class Tab
   end
 
   def content
-    @output.css('#cont').css('pre')[2].to_s
+    @output.css('#cont').css('pre')[1].to_s
   end
 end

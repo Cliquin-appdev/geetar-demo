@@ -5,3 +5,9 @@ I created this app so I don't have to deal with all of the crap on ultimate-guit
 Geetar sends your search query to ulitmate-guitar.com, scrapes the results and displays them in a bullshit-free UI for your guitar playing pleasure.
 
 www.geetar.lol
+
+## Installation
+
+`$ bundle install`
+
+`$ rerun app.rb`
