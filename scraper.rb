@@ -6,7 +6,7 @@ module Scraper
   BASE_URL = 'https://www.ultimate-guitar.com/search.php'
 
   def get_page(page_url)
-    Nokogiri::HTML( open(page_url, 'User-Agent' => 'firefox') )
+    Nokogiri::HTML( open(page_url, 'User-Agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.854.0 Safari/535.2') )
   end
 end
 
@@ -20,6 +20,7 @@ class Search
   end
 
   def results
+    @output.search("#npd77").remove
     rows = @output.css('.tresults').css('tr').drop(1)
     rows.map! { |row| Result.new(row) }
     add_artist!(rows)
