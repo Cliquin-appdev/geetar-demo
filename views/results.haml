@@ -2,14 +2,21 @@
   = haml :_search
 
 .main
-
-  - search_results.each do |result|
+  - if search_results.nil? || search_results.empty?
     .item
       .title
-        %a{ href: "/show?url=#{result.title[:href]}" }= result.title[:text]
-      .artist
-        = " by #{result.artist}"
-      .type
-        = result.item_type
-  .page_links
-    = page_links
+        No Results :(
+  - else
+    - search_results.each do |result|
+      .item
+        .title
+          %a{ href: "/show?url=#{result.url}" }= result.title
+        .artist
+          = " by #{result.artist}"
+        .type
+          = result.type
+    .page_links
+      - if params[:page].to_i > 1
+        %a{ href: "/results?query=#{params[:query]}&page=#{params[:page].to_i - 1}" }= "< Previous"
+      - if next_page
+        %a{ href: "/results?query=#{params[:query]}&page=#{next_page}" }= "Next >"

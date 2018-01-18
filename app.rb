@@ -1,17 +1,18 @@
 require 'sinatra'
-
-require_relative 'scraper.rb'
+require 'geetar'
 
 get '/' do
   haml :index
 end
 
 get '/results' do
-  search = Search.new(params[:query], params[:page])
-  haml :results, locals: {search_results: search.results, page_links: search.page_links}
+  client = Geetar::Client.new
+  options = { search_type: 'title', value: params[:query], page: params[:page] }
+  results = client.search(options)
+  haml :results, locals: {search_results: results, next_page: results.next_page }
 end
 
 get '/show' do
-  tab = Tab.new( params[:url] )
+  tab = Geetar::Client.new.get_tab_content(params[:url])
   haml :show, locals: {tab: tab}, layout: false
 end
