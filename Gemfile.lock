@@ -36,15 +36,15 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  haml
-  nokogiri
-  pry
-  rerun
-  sass
-  sinatra
+  haml (~> 4.0.0)
+  nokogiri (~> 1.6.0)
+  pry (~> 0.10)
+  rerun (~> 0.11.0)
+  sass (~> 3.4.0)
+  sinatra (~> 1.4.0)
 
 RUBY VERSION
    ruby 2.3.1p112
 
 BUNDLED WITH
-   1.14.6
+   1.16.1

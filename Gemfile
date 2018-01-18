@@ -1,9 +1,15 @@
 source 'https://rubygems.org'
 ruby '~> 2.3.0'
 
-gem 'sinatra'
-gem 'haml'
-gem 'nokogiri'
-gem 'pry'
-gem 'sass'
-gem 'rerun'
+gem 'sinatra', '~> 1.4.0'
+gem 'haml', '~> 4.0.0'
+gem 'nokogiri', '~> 1.6.0'
+gem 'sass', '~> 3.4.0'
+
+group :development do
+  gem 'rerun', '~> 0.11.0'
+end
+
+group :development, :test do
+  gem 'pry', '~> 0.10'
+end
