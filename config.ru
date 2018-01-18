@@ -1,6 +1,4 @@
-require 'rubygems'
-require 'haml'
-require 'pry'
+Bundler.require(:default, :development)
 require 'sass/plugin/rack'
 require './app'
 require './scraper.rb'
