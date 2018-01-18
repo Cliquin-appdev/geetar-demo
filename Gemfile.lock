@@ -1,10 +1,16 @@
+GIT
+  remote: https://github.com/jpalmieri/geetar
+  revision: 1c44bc41321d9a1de7bd8083e8937ee2f92ec8da
+  branch: get-tab
+  specs:
+    geetar (1.0.0)
+      nokogiri (>= 1.7.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
     coderay (1.1.0)
     ffi (1.9.10)
-    geetar (1.0.0)
-      nokogiri (>= 1.7.0)
     haml (4.0.7)
       tilt
     listen (3.0.4)
@@ -38,7 +44,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  geetar (~> 1.0.0)
+  geetar!
   haml (~> 4.0.0)
   pry (~> 0.10)
   rerun (~> 0.11.0)
