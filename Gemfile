@@ -3,8 +3,8 @@ ruby '~> 2.3.0'
 
 gem 'sinatra', '~> 1.4.0'
 gem 'haml', '~> 4.0.0'
-gem 'nokogiri', '~> 1.6.0'
 gem 'sass', '~> 3.4.0'
+gem 'geetar', '~> 1.0.0'
 
 group :development do
   gem 'rerun', '~> 0.11.0'
