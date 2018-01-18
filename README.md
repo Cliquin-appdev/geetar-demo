@@ -8,6 +8,13 @@ www.geetar.lol
 
 ## Installation
 
-`$ bundle install`
+Install gems:
 
-`$ rerun app.rb`
+```
+$ bundle install
+```
+
+Start rack server:
+```
+bundle exec rackup
+```
