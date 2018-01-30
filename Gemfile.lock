@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/jpalmieri/geetar
-  revision: 1c44bc41321d9a1de7bd8083e8937ee2f92ec8da
-  branch: get-tab
+  revision: 318bd44e4c705e3d0854c95b0ecc0cc5ec488e5c
+  ref: 318bd44
   specs:
     geetar (1.0.0)
       nokogiri (>= 1.7.0)
@@ -18,7 +18,7 @@ GEM
       rb-inotify (>= 0.9)
     method_source (0.8.2)
     mini_portile2 (2.3.0)
-    nokogiri (1.8.1)
+    nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
     pry (0.10.1)
       coderay (~> 1.1.0)
