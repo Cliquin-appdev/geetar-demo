@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/jpalmieri/geetar
-  revision: 0029ef8ad83ed0002940593791b503b60f93e785
-  ref: 0029ef8
+  revision: 80da8c3a8c50ccda67888865de4bc2a0a4987b46
+  ref: 80da8c3
   specs:
     geetar (1.2.0)
       nokogiri (>= 1.7.0)
