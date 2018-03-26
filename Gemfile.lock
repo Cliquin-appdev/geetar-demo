@@ -1,12 +1,3 @@
-GIT
-  remote: https://github.com/jpalmieri/geetar
-  revision: 80da8c3a8c50ccda67888865de4bc2a0a4987b46
-  ref: 80da8c3
-  specs:
-    geetar (1.2.0)
-      nokogiri (>= 1.7.0)
-      poltergeist (~> 1.7.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -22,6 +13,9 @@ GEM
     cliver (0.3.2)
     coderay (1.1.0)
     ffi (1.9.10)
+    geetar (2.0.0)
+      nokogiri (>= 1.7.0)
+      poltergeist (~> 1.7.0)
     haml (4.0.7)
       tilt
     listen (3.0.4)
@@ -72,7 +66,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  geetar!
+  geetar (~> 2.0.0)
   haml (~> 4.0.0)
   pry (~> 0.10)
   rerun (~> 0.11.0)
